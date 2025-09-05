@@ -6,7 +6,7 @@ body {
     margin: 0;
 }
 
-#container{
+#container {
     color: #3e230e;
     border: 1px solid rgba(62, 35, 14, 0.8);
     border-radius: 15px;
@@ -17,10 +17,11 @@ body {
     width: 800px;
     align-items: center;
 }
-p{
+
+p {
     color: #555051;
     text-align: justify;
-    font-size:medium;
+    font-size: medium;
 }
 
 #countdown {
@@ -30,7 +31,7 @@ p{
     gap: 20px;
 }
 
-.box{
+.box {
     background-color: #fdf6e7;
     border: 1px solid rgba(62, 35, 14, 0.8);
     border-radius: 15px;
@@ -47,10 +48,10 @@ p{
 .box span {
     font-size: 3em;
     color: #3e230e;
-    display: block; 
+    display: block;
     font-weight: bold;
-    line-height: 1; 
-    margin: 0; 
+    line-height: 1;
+    margin: 0;
     text-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -61,4 +62,43 @@ p{
     margin: 5px 0 0 0;
     line-height: 1;
     letter-spacing: 2px;
+}
+
+/* Missão oculta */
+.hidden {
+    display: none;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.show {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Ações (botões) */
+.actions {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+}
+
+#sharepointBtn,
+#copyLinkBtn {
+    background-color: #3e230e;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+#sharepointBtn:hover,
+#copyLinkBtn:hover {
+    background-color: #6b4221;
+    transform: scale(1.05);
 }

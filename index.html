@@ -1,34 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Convite: missão surpresa</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Convite: Missão Surpresa</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="container">
-        <h1>Prepare-se para a missão surpresa!</h1>
-        <p>Assim que o cronômetro <strong>zerar</strong>, tudo será <strong>revelado</strong>. Fique atento: criatividade, trabalho em equipe e transformação são suas melhores armas. Consegue imaginar o <strong>desafio</strong>?</p>
-        <div id="countdown">
-            <div class="box">
-                <span id="days">00</span>
-                <p>DIAS</p>
-            </div>
-            <div class="box">
-                <span id="hours">00</span>
-                <p>HORAS</p>
-            </div>
-            <div class="box">
-                <span id="minutes">00</span>
-                <p>MINUTOS</p>
-            </div>
-            <div class="box">
-                <span id="seconds">00</span>
-                <p>SEGUNDOS</p>
-            </div>
-        </div>
+  <div id="container">
+    <h1>Prepare-se para a missão surpresa!</h1>
+    <p>
+      Assim que o cronômetro <strong>zerar</strong>, tudo será <strong>revelado</strong>.  
+      Fique atento: criatividade, trabalho em equipe e transformação são suas melhores armas.  
+      Consegue imaginar o <strong>desafio</strong>?
+    </p>
+
+    <!-- Timer -->
+    <div id="countdown">
+      <div class="box"><span id="days">00</span><p>DIAS</p></div>
+      <div class="box"><span id="hours">00</span><p>HORAS</p></div>
+      <div class="box"><span id="minutes">00</span><p>MINUTOS</p></div>
+      <div class="box"><span id="seconds">00</span><p>SEGUNDOS</p></div>
     </div>
-    <script src="script.js"></script>
+<hr>
+    <div id="mission" class="hidden">
+      <h2>A missão surpresa começou!</h2>
+      <p>
+        Você está sendo desafiado a criar <strong>conteúdos autorais</strong> que destaquem sua identidade e sua expertise. Essas criações formarão um grande <strong>banco colaborativo de conhecimento</strong>, acessível para todos os colaboradores. 
+      </p>
+      <p>
+        Prepare-se: engajamento, criatividade e colaboração serão suas melhores armas.  
+        Você pode participar sozinho, em dupla ou em trio.  
+      </p>
+
+      <div class="actions">
+        <button id="sharepointBtn">📌 ACESSAR AS REGRAS COMPLETAS</button>
+        <button id="copyLinkBtn">📋 Copiar link</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
