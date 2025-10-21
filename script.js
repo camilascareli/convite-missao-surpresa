@@ -1,4 +1,4 @@
-const targetDate = new Date("2025-10-21T11:00:00").getTime();
+const targetDate = new Date("2025-10-21T09:00:00").getTime();
 
 function updateCountdown() {
     const now = new Date().getTime();
@@ -29,7 +29,7 @@ updateCountdown();
 
 // Botão do SharePoint
 document.getElementById("sharepointBtn")?.addEventListener("click", () => {
-    window.open("https://sharepoint.com/completar-quando-fizer", "_blank");
+    window.open("https://nasnuvensrnp.sharepoint.com/sites/conecta-ga-gai/SitePages/gai-legends-04.aspx", "_blank");
 });
 
 // Botão de copiar link
